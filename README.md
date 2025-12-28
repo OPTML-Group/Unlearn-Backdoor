@@ -52,6 +52,25 @@ python load_data.py
 
 For detailed usage, training scenarios, and evaluation procedures, see the [MUSE README](./MUSE/README.md).
 
+### WMDP Benchmark
+
+For experiments on the WMDP benchmark using the Zephyr-7B-beta model:
+
+```bash
+cd WMDP
+
+# Train with RMU method
+bash run_rmu_backdoor.sh
+
+# Train with NPO method
+bash run_npo_backdoor.sh
+
+# Evaluate (edit MODEL_PATH in script first)
+bash run_eval.sh
+```
+
+For detailed training configurations, hyperparameters, and evaluation metrics, see the [WMDP README](./WMDP/README.md).
+
 ---
 
 ## Citation
